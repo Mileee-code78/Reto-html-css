@@ -1,0 +1,64 @@
+/*Selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonditoo */
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.359);
+    font-family: Arial, sans-serif;
+}
+
+/*Selector de ID*/
+#titulo {
+    color: #75059a;
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+/*Selector de clase*/
+.texto {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    margin: 40px;
+    font-family: 'Caveat', sans-serif; 
+}
+
+/*styles*/
+.foto-centro {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*flowers bordeerrr*/
+body::before, body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background-image: url(../img/bordee.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    z-index: 1;
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
